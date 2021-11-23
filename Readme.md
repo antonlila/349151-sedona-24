@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Антон Лила](https://up.htmlacademy.ru/adaptive/24/user/349151).
-* Наставник: `Сергей Максименко`(https://htmlacademy.ru/profile/id248863).
+* Наставник: [Сергей Максименко](https://htmlacademy.ru/profile/id248863).
 
 ---
 
