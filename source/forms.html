@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Туристический городок Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item ">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1 class="visually-hidden">Седона!</h1>
+      <section class="page-intro">
+          <h2 class="page-intro__heading">Оставьте свой отзыв</h2>
+          <p class="page-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+
+      <form class="recall-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="recall-form__section  recall-form__section--id">
+          <legend class="recall-form__title recall-form__title--highlight">
+            Представьтесь:
+          </legend>
+          <ul class="recall-form__list">
+            <li class="recall-form__list-item">
+              <label class="recall-form__label" for="name">Имя:</label>
+              <input type="text" id="name" name="name" placeholder="Петр">
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__label" for="surname">Фамилия:</label>
+              <input type="text" id="surname" name="surname" placeholder="Иванов">
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__label" for="middlename">Отчество:</label>
+              <input type="text" id="middlename" name="middlename" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__section  recall-form__section--contacts-info">
+          <legend class="recall-form__title  recall-form__title--highlight">Контактная информация:</legend>
+          <ul class="recall-form__contacts-list">
+            <li class="recall-form__contacts-item">
+              <label class="recall-form__contacts-label" for="tel">
+                Контактный телефон*:
+              </label>
+              <div class="recall-form__contacts-input">
+                <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
+                <button class="recall-form__input-button" type="button">
+                  Набрать номер
+                  <!--SVG Графика-->
+                </button>
+              </div>
+            </li>
+            <li class="recall-form__contacts-item">
+              <label class="recall-form__contacts-label" for="email">Электронная почта:</label>
+              <div class="recall-form__contacts-input">
+                <input type="email" id="email" name="email" placeholder="Введите e-mail">
+                <button class="recall-form__input-button  recall-form__input-button--mail" type="button">
+                  Отправить письмо
+                  <!--SVG Графика-->
+                </button>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__section recall-form__section--impression">
+          <legend class="recall-form__title recall-form__title--highlight">Ваше общее впечатление:</legend>
+          <ul class="recall-form__interview">
+            <li class="recall-form__interview-item">
+              <label class="recall-form__radio-control">
+                <input type="radio" name="interview" value="positive" checked>
+                <span class="recall-form__radio-icon">
+                  <span class="recall-form__radio-icon-tick"></span>
+                </span>
+                <span class="recall-form__radio-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="recall-form__interview-item">
+              <label class="recall-form__radio-control">
+                <input type="radio" name="interview" value="negative">
+                <span class="recall-form__radio-icon">
+                  <span class="recall-form__radio-icon-tick"></span>
+                </span>
+                <span class="recall-form__radio-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="recall-form__interview-item">
+              <label class="recall-form__radio-control">
+                <input type="radio" name="interview" value="difficulty">
+                <span class="recall-form__radio-icon">
+                  <span class="recall-form__radio-icon-tick"></span>
+                </span>
+                <span class="recall-form__radio-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__section  recall-form__section--visited">
+          <legend class="recall-form__title  recall-form__title--highlight">Посещенные достопримечательности:</legend>
+          <ul class="recall-form__visited">
+            <li class="recall-form__visited-item">
+              <label class="recall-form__checkbox-control">
+                <input type="checkbox" name="devils-bridge" checked>
+                <span class="recall-form__checkbox-icon">
+                  <!--SVG Графика-->
+                </span>
+                <span class="recall-form__checkbox-label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="recall-form__visited-item">
+              <label class="recall-form__checkbox-control">
+                <input type="checkbox" name="slide-park" checked>
+                <span class="recall-form__checkbox-icon">
+                  <!--SVG Графика-->
+                </span>
+                <span class="recall-form__checkbox-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="recall-form__visited-item">
+              <label class="recall-form__checkbox-control">
+                <input type="checkbox" name="mountain-bell">
+                <span class="recall-form__checkbox-icon">
+                  <!--SVG Графика-->
+                </span>
+                <span class="recall-form__checkbox-label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="recall-form__visited-item">
+              <label class="recall-form__checkbox-control">
+                <input type="checkbox" name="red-rocks" checked>
+                <span class="recall-form__checkbox-icon">
+                  <!--SVG Графика-->
+                </span>
+                <span class="recall-form__checkbox-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__section  recall-form__section--message">
+          <legend class="recall-form__title  recall-form__title--highlight">Опишите свои эмоции:</legend>
+          <div class="recall-form__message-wrap">
+            <textarea class="recall-form__message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+        </fieldset>
+        <div class="recall-form__bottom-wrap">
+          <input class="button recall-form__button" type="submit" value="Отправить отзыв">
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__title">#VisitSedona</p>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано</p>
+            <img src="img/htmlacademy.svg" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
